@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryBook App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .card h1, .card h2 {
+      color: #5e2ca5;
+    }
+    .input-group {
+      margin: 10px 0;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      background: #7b3fe4;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #5e2ca5;
+    }
+    .center {
+      text-align: center;
+    }
+    .highlight {
+      color: #7b3fe4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Login Page -->
+    <div class="card">
+      <h1>Login</h1>
+      <p>Please sign in to continue.</p>
+      <div class="input-group">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password">
+      </div>
+      <button class="btn">Login</button>
+      <div class="center"><a href="#">Forgot Password?</a></div>
+    </div>
+
+    <!-- Register Page -->
+    <div class="card">
+      <h1>Create an Account</h1>
+      <div class="input-group">
+        <input type="text" placeholder="Full Name">
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password">
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Confirm Password">
+      </div>
+      <button class="btn">Sign Up</button>
+    </div>
+
+    <!-- Story Share Page -->
+    <div class="card">
+      <h2>Let's hear a <span class="highlight">story</span> from you</h2>
+      <p>Share and enjoy your interesting stories with other people.</p>
+      <div class="input-group">
+        <textarea rows="5" placeholder="Type your story..."></textarea>
+      </div>
+      <button class="btn">Post Story</button>
+    </div>
+
+    <!-- Withdrawal Success Page -->
+    <div class="card center">
+      <h2>✔</h2>
+      <h1>$258.09</h1>
+      <p>You have successfully withdrawn this amount from your account.</p>
+      <p>Transaction: $289.50<br>Total Balance: $279.80<br>Date: 12/03/2023<br>Payment Method: PayPal</p>
+      <button class="btn">Download Receipt</button>
+    </div>
+
+    <!-- Welcome Home Page -->
+    <div class="card center">
+      <h1>Welcome Home</h1>
+      <p>Discover and read amazing stories from people all around the world.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
